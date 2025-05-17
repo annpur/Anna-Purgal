@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 300px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+    input, button {
+      padding: 0.5rem;
+      margin: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Prosty Kalkulator</h1>
+  <input type="number" id="num1" placeholder="Liczba 1">
+  <input type="number" id="num2" placeholder="Liczba 2">
+  <div>
+    <button onclick="dzialanie('+')">+</button>
+    <button onclick="dzialanie('-')">-</button>
+    <button onclick="dzialanie('*')">*</button>
+    <button onclick="dzialanie('/')">/</button>
+  </div>
+  <p id="wynik"></p>
+
+  <script>
+    function dzialanie(op) {
+      const a = parseFloat(document.getElementById('num1').value);
+      const b = parseFloat(document.getElementById('num2').value);
+      let wynik = 'Błąd';
+      if (!isNaN(a) && !isNaN(b)) {
+        switch(op) {
+          case '+': wynik = a + b; break;
+          case '-': wynik = a - b; break;
+          case '*': wynik = a * b; break;
+          case '/': wynik = b !== 0 ? a / b : 'Nie dziel przez 0'; break;
+        }
+      }
+      document.getElementById('wynik').textContent = 'Wynik: ' + wynik;
+    }
+  </script>
+</body>
+</html>
