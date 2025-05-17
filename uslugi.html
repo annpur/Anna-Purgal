@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+            background: white;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #ddd;
+            padding: 20px;
+        }
+        .service {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nasze Usługi</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Strona główna</a>
+        <a href="#services">Usługi</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>Oferowane Usługi</h2>
+            <section class="service">
+                <h3>Tworzenie stron internetowych</h3>
+                <p>Projektowanie nowoczesnych i responsywnych stron internetowych dla firm i klientów indywidualnych.</p>
+            </section>
+            
+            <section class="service">
+                <h3>Optymalizacja SEO</h3>
+                <p>Analiza i poprawa pozycji strony w wynikach wyszukiwania.</p>
+            </section>
+
+            <section class="service">
+                <h3>Obsługa e-commerce</h3>
+                <p>Tworzenie i zarządzanie sklepami internetowymi dla Twojego biznesu.</p>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <h3>Aktualności</h3>
+            <ul>
+                <li>Nowa oferta SEO!</li>
+                <li>Wprowadzenie AI do naszych usług</li>
+                <li>Promocja dla stałych klientów</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Usługi Web | Wszystkie prawa zastrzeżone</p>
+    </footer>
+
+</body>
+</html>
