@@ -1,0 +1,145 @@
+/* Resetowanie domyślnych styli */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styl dla całej strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Nagłówek */
+header {
+    background: linear-gradient(135deg, #4A90E2, #D0021B);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Nawigacja */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* Główny kontener */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Główna treść */
+.main-content {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pasek boczny */
+.sidebar {
+    flex: 1;
+    background: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Karty */
+.card {
+    background: #FFF;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabele */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Formularze */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #4A90E2;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #357ABD;
+}
+
+/* Animacje */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+}
